@@ -71,7 +71,7 @@ end
 
 local requestsDisabled = true --getgenv and getgenv().DISABLE_RAYFIELD_REQUESTS
 local InterfaceBuild = '3K3W'
-local Release = "Build 1.68"
+local Release = "Good script by yqantg"
 local RayfieldFolder = "Rayfield"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
@@ -393,46 +393,45 @@ local RayfieldLibrary = {
 		},
 
 		Light = {
-			TextColor = Color3.fromRGB(40, 40, 40),
+			TextColor = Color3.fromRGB(46, 204, 113),
 
 			Background = Color3.fromRGB(245, 245, 245),
 			Topbar = Color3.fromRGB(230, 230, 230),
 			Shadow = Color3.fromRGB(200, 200, 200),
 
-			NotificationBackground = Color3.fromRGB(250, 250, 250),
-			NotificationActionsBackground = Color3.fromRGB(240, 240, 240),
+			NotificationBackground = Color3.fromRGB(210, 240, 235),
+            NotificationActionsBackground = Color3.fromRGB(180, 225, 220),
 
-			TabBackground = Color3.fromRGB(235, 235, 235),
-			TabStroke = Color3.fromRGB(215, 215, 215),
-			TabBackgroundSelected = Color3.fromRGB(255, 255, 255),
-			TabTextColor = Color3.fromRGB(80, 80, 80),
-			SelectedTabTextColor = Color3.fromRGB(0, 0, 0),
+			TabBackground = Color3.fromRGB(225, 240, 232),
+            TabStroke = Color3.fromRGB(200, 225, 215),
+            TabBackgroundSelected = Color3.fromRGB(245, 255, 250),
+            TabTextColor = Color3.fromRGB(70, 90, 80),
+            SelectedTabTextColor = Color3.fromRGB(30, 60, 45),
 
-			ElementBackground = Color3.fromRGB(240, 240, 240),
-			ElementBackgroundHover = Color3.fromRGB(225, 225, 225),
-			SecondaryElementBackground = Color3.fromRGB(235, 235, 235),
-			ElementStroke = Color3.fromRGB(210, 210, 210),
-			SecondaryElementStroke = Color3.fromRGB(210, 210, 210),
+			ElementBackground = Color3.fromRGB(228, 242, 235),
+            ElementBackgroundHover = Color3.fromRGB(212, 232, 222),
+SecondaryElementBackground = Color3.fromRGB(235, 248, 242),
+ElementStroke = Color3.fromRGB(190, 220, 205),
+SecondaryElementStroke = Color3.fromRGB(175, 205, 190),
 
-			SliderBackground = Color3.fromRGB(150, 180, 220),
-			SliderProgress = Color3.fromRGB(100, 150, 200), 
-			SliderStroke = Color3.fromRGB(120, 170, 220),
+SliderBackground = Color3.fromRGB(195, 225, 210),
+SliderProgress = Color3.fromRGB(140, 200, 175),
+SliderStroke = Color3.fromRGB(165, 215, 195),
 
-			ToggleBackground = Color3.fromRGB(220, 220, 220),
-			ToggleEnabled = Color3.fromRGB(0, 146, 214),
-			ToggleDisabled = Color3.fromRGB(150, 150, 150),
-			ToggleEnabledStroke = Color3.fromRGB(0, 170, 255),
-			ToggleDisabledStroke = Color3.fromRGB(170, 170, 170),
-			ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
-			ToggleDisabledOuterStroke = Color3.fromRGB(180, 180, 180),
+ToggleBackground = Color3.fromRGB(225, 240, 232),
+ToggleEnabled = Color3.fromRGB(80, 180, 145),
+ToggleDisabled = Color3.fromRGB(170, 190, 180),
+ToggleEnabledStroke = Color3.fromRGB(100, 200, 165),
+ToggleDisabledStroke = Color3.fromRGB(185, 205, 195),
+ToggleEnabledOuterStroke = Color3.fromRGB(150, 185, 170),
+ToggleDisabledOuterStroke = Color3.fromRGB(200, 215, 205),
 
-			DropdownSelected = Color3.fromRGB(230, 230, 230),
-			DropdownUnselected = Color3.fromRGB(220, 220, 220),
+DropdownSelected = Color3.fromRGB(225, 242, 235),
+DropdownUnselected = Color3.fromRGB(215, 235, 225),
 
-			InputBackground = Color3.fromRGB(240, 240, 240),
-			InputStroke = Color3.fromRGB(180, 180, 180),
-			PlaceholderColor = Color3.fromRGB(140, 140, 140)
-		},
+InputBackground = Color3.fromRGB(235, 248, 242),
+InputStroke = Color3.fromRGB(185, 215, 200),
+PlaceholderColor = Color3.fromRGB(110, 145, 130),
 
 		Amethyst = {
 			TextColor = Color3.fromRGB(240, 240, 240),
@@ -1679,9 +1678,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 			while true do
 				task.wait(math.random(180, 600))
 				RayfieldLibrary:Notify({
-					Title = "Rayfield Interface",
-					Content = "Enjoying this UI library? Find it at sirius.menu/discord",
-					Duration = 7,
+					Title = "",
+					Content = "",
+					Duration = 0,
 					Image = 4370033185,
 				})
 			end
